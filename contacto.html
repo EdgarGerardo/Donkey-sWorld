@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Donkey's World</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function openSlideMenu(){
+          document.getElementById('side-menu').style.width = '250px';
+          document.getElementById('main').style.marginLeft = '250px';
+        }
+    
+        function closeSlideMenu(){
+          document.getElementById('side-menu').style.width = '0';
+          document.getElementById('main').style.marginLeft = '0';
+        }
+      </script>
+</head>
+<body>
+    <header>
+        <div class="header-contenedor">
+            <nav class="navbar">
+                <a href="index.html" class="logo">DONKEY'S WORLD</a>
+                <span class="open-slide">
+                  <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                    </svg>
+                  </a>
+                </span>
+                <ul class="navbar-nav">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+                    <li><a href="#section3">UBICACION</a></li>
+                </ul>
+              </nav>
+            
+              <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a href="index.html">INICIO</a>
+                <a href="productos.html">PRODUCTOS</a>
+                <a href="#section3">UBICACION</a>
+              </div>
+        </div>
+    </header>
+     <div class="centrar2" id="section2">
+        <h1 class="centrar contacto-container titulo2"><i class="far fa-envelope-open-text fa-9x icon"></i></h1>
+        <input class="textos-container" placeholder="Nombre">
+        <input class="textos-container" placeholder="Your@duckmail.com">
+        <textarea class="textos-container" placeholder="Comentarios"></textarea>
+        <h4 class="btn">Enviar</h4>
+    </div>
+    <div class="centrar" id="section3">
+        <h1 class="centrar titulo ubicacion-container">UBICACION</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.586742331092!2d-110.31394228463243!3d24.151147079264746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86afd3437599e705%3A0x591404e2115beee3!2sLos%20Percherones!5e0!3m2!1ses!2smx!4v1602208574730!5m2!1ses!2smx" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+     <footer>
+        <div class="centrar row">
+            <div class="centrar ">
+                <div class="pb-1 pt-1 nav-contenido"><a>23000 Allende S/N esquina, Josefa Ortiz de Domínguez, Zona Central, 23000 La Paz, B.C.S.</a></div>
+                <div class="pb-1 nav-contenido"><a>TEL. 612-125-3755</a></div>
+                <div class="pb-1 nav-contenido"><a>E-mail. DkWorld@duckmail.com</a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

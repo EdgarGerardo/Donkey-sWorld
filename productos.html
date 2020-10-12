@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Donkey's World</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function openSlideMenu(){
+          document.getElementById('side-menu').style.width = '250px';
+          document.getElementById('main').style.marginLeft = '250px';
+        }
+    
+        function closeSlideMenu(){
+          document.getElementById('side-menu').style.width = '0';
+          document.getElementById('main').style.marginLeft = '0';
+        }
+      </script>
+</head>
+<body>
+    <header>
+        <div class="header-contenedor">
+            <nav class="navbar">
+                <a href="index.html" class="logo">DONKEY'S WORLD</a>
+                <span class="open-slide">
+                  <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                    </svg>
+                  </a>
+                </span>
+                <ul class="navbar-nav">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+              </nav>
+            
+              <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a href="index.html">INICIO</a>
+                <a href="contacto.html">CONTACTO</a>
+              </div>
+        </div>
+    </header>
+     <div class="centrar productos-container" id="section1">
+        <div class="productos2"><div class="titulo">MACHACA</div><img src="img/BurritoDeMachaca.jpg" alt="products"></div> 
+        <div class="productos2"><div class="titulo">HUEVO CON PAPA</div><img src="img/BurritoDeHuevoConPapa.jpg" alt=""></div>
+        <div class="productos2"><div class="titulo">FRIJOL CON ARROZ</div><img src="img/BurritoDeFrijolConArroz.jpg" alt=""></div>
+        <div class="productos2"><div class="titulo">FRIJOLES CON CARNE</div><img src="img/BurritoDeFrijoConCarne.jpg" alt=""></div>
+        <div class="productos2"><div class="titulo">CHORIZO</div><img src="img/BurritoDeChorizo.jpg" alt=""></div>     
+        <div class="productos2"><div class="titulo">CARNE Y QUESO</div><img src="img/BurritoDeCarneYQueso.jpg" alt=""></div>     
+        <div class="productos2"><div class="titulo">CERDO CON CHIPOTLE</div><img src="img/BurritoDeChipotle.jpg" alt=""></div>     
+    </div>
+    <footer>
+        <div class="centrar row">
+            <div class="centrar ">
+                <div class="pb-1 pt-1 nav-contenido"><a>23000 Allende S/N esquina, Josefa Ortiz de Domínguez, Zona Central, 23000 La Paz, B.C.S.</a></div>
+                <div class="pb-1 nav-contenido"><a>TEL. 612-125-3755</a></div>
+                <div class="pb-1 nav-contenido"><a>E-mail. DkWorld@duckmail.com</a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
